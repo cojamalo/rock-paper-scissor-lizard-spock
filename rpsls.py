@@ -18,6 +18,9 @@ Created on Wed Jun 28 12:57:32 2017
 # 3 - lizard
 # 4 - scissors
 
+import math
+import random as rand
+
 # helper functions
 
 def name_to_number(name):
@@ -51,25 +54,22 @@ def number_to_name(number):
         return -1 # If not, return error code
 
 def rpsls(player_choice): 
-    # delete the following pass statement and fill in your code below
-    pass
-    
     # print a blank line to separate consecutive games
-
+    print("")
     # print out the message for the player's choice
-
+    print("Player chooses " + player_choice)
     # convert the player's choice to player_number using the function name_to_number()
-
+    player_number = name_to_number(player_choice)
     # compute random guess for comp_number using random.randrange()
-
+    comp_number = rand.randrange(0,5)
     # convert comp_number to comp_choice using the function number_to_name()
-    
+    comp_choice = number_to_name(comp_number)
     # print out the message for computer's choice
-
+    print("Computer chooses "+comp_choice)
     # compute difference of comp_number and player_number modulo five
-
+    diff = (comp_number - player_number) % 5
     # use if/elif/else to determine winner, print winner message
-
+    
     
 # test your code - THESE CALLS MUST BE PRESENT IN YOUR SUBMITTED CODE
 rpsls("rock")
