@@ -1,2 +1,2 @@
-This is a test 3
+This is a test just updated
 fswatch -o -r -l2 "$f" /Users/cojamalo/Documents/savePush.sh
