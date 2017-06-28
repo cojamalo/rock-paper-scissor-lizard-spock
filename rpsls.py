@@ -21,12 +21,19 @@ Created on Wed Jun 28 12:57:32 2017
 # helper functions
 
 def name_to_number(name):
-    # delete the following pass statement and fill in your code below
-    pass
-
-    # convert name to number using if/elif/else
-    # don't forget to return the result!
-
+    # Create dictionary for the name:code mapping
+    choices = {
+        'rock': 0,
+        'Spock': 1,
+        'paper': 2,
+        'lizard': 3,
+        'scissors': 4
+            }
+    # Check if name is in the dictionary
+    if name in choices:
+        return choices[name] # If so, return the code
+    else:
+        return -1 # If not, return error code
 
 def number_to_name(number):
     # delete the following pass statement and fill in your code below
