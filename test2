@@ -1,3 +1,2 @@
-This is a testification
-
+This is a test test
 fswatch -o -r -l2 "$f" /Users/cojamalo/Documents/savePush.sh
