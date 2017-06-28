@@ -18,7 +18,6 @@ Created on Wed Jun 28 12:57:32 2017
 # 3 - lizard
 # 4 - scissors
 
-import math
 import random as rand
 
 # helper functions
@@ -67,9 +66,14 @@ def rpsls(player_choice):
     # print out the message for computer's choice
     print("Computer chooses "+comp_choice)
     # compute difference of comp_number and player_number modulo five
-    diff = (comp_number - player_number) % 5
+    diff = (player_number - comp_number) % 5
     # use if/elif/else to determine winner, print winner message
-    
+    if diff == 1 or diff == 2:
+        print("Player wins!")
+    elif diff == 3 or diff == 4:
+        print("Computer wins!")
+    else:
+        print("Player and computer tie!")
     
 # test your code - THESE CALLS MUST BE PRESENT IN YOUR SUBMITTED CODE
 rpsls("rock")
