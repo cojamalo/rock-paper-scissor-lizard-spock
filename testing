@@ -1,3 +1,0 @@
-This is a test
-
-fswatch -o -r -l2 "$f" /Users/cojamalo/Documents/savePush.sh
