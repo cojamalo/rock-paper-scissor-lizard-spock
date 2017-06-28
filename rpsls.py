@@ -8,7 +8,6 @@ Created on Wed Jun 28 12:57:32 2017
 
 # Rock-paper-scissors-lizard-Spock template
 
-test
 # The key idea of this program is to equate the strings
 # "rock", "paper", "scissors", "lizard", "Spock" to numbers
 # as follows:
