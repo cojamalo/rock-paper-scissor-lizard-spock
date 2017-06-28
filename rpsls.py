@@ -36,12 +36,19 @@ def name_to_number(name):
         return -1 # If not, return error code
 
 def number_to_name(number):
-    # delete the following pass statement and fill in your code below
-    pass
-    
-    # convert number to a name using if/elif/else
-    # don't forget to return the result!
-    
+    # Create dictionary for the name:code mapping
+    choices = {
+        0:'rock',
+        1:'Spock',
+        2:'paper',
+        3:'lizard',
+        4:'scissors'
+            }
+    # Check if code is in the dictionary
+    if number in choices:
+        return choices[number] # If so, return the name
+    else:
+        return -1 # If not, return error code
 
 def rpsls(player_choice): 
     # delete the following pass statement and fill in your code below
